@@ -1,0 +1,560 @@
+@import url(/css/buttons.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.navbar {
+  height: 70px;
+  background-color: rgb(31, 30, 30);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  align-items: center;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  text-decoration: none;
+  color: rgb(247, 247, 247);
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.navbar__logo .logo__gym {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navbar__logo:hover {
+  color: white;
+  transition: all 0.4s ease-out;
+}
+
+.navbar__nav {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar__nav li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.navbar__nav li a {
+  padding: 12px;
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.09s ease-out;
+}
+
+.navbar__nav li a:hover {
+  opacity: 1;
+}
+
+/*Sections CSS*/
+.section_container {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+}
+
+/*Homepage*/
+.homepage {
+  width: 100%;
+  height: 100%;
+  background: url(/img/bg3.jpg) no-repeat;
+  opacity: 0.9;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  -khtml-background-size: 100%;
+  background-size: 100%;
+}
+
+.homepage .text_homepage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.text_homepage span {
+  text-transform: uppercase;
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.text_homepage p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/*Welcome page*/
+.section_welcome {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 242, 241);
+}
+
+.content_welcome {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.content_welcome h4 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.content_welcome hr {
+  margin: 20px 0 40px 0;
+  height: 2px;
+  border: none;
+  background-color: #ca1c1c;
+}
+
+.content_welcome p {
+  width: 800px;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.info_boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info_boxes .first,
+.second,
+.third {
+  width: 400px;
+  height: 200px;
+  margin: -80px 20px 0 0;
+  border: 2px solid rgba(201, 201, 201, 0.6);
+}
+
+.info_boxes .material-icons {
+  font-size: 35px;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border: 20px solid rgb(39, 39, 39);
+  border-radius: 50%;
+  margin-top: -10%;
+}
+
+.info_boxes h2 {
+  padding: 20px;
+  font-weight: 500;
+  color: #ca1c1c;
+}
+
+.info_boxes p {
+  font-weight: 300;
+  padding: 0 10px 0 10px;
+}
+
+/*Excersise page*/
+.section_excersise {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(39, 38, 38);
+}
+
+.content_excersise {
+  height: 40%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content_excersise h4 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.content_excersise p {
+  width: 800px;
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.sport_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bodybuilding {
+  background: url(/img/sport1.jpg);
+}
+.fitness {
+  background: url(/img/sport2.jpg);
+}
+.crossfit {
+  background: url(/img/sport3.jpg);
+}
+.cardio {
+  background: url(/img/sport4.jpg);
+}
+
+.sport_cards .bodybuilding,
+.fitness,
+.crossfit,
+.cardio {
+  width: 480px;
+  height: 480px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sport_cards h2 {
+  font-size: 35px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+
+/*Coaches*/
+.section_coaches {
+  width: 100%;
+  height: 100%;
+  background: rgb(243, 242, 241);
+}
+
+.content_coaches {
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.content_coaches h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.section_coaches hr {
+  margin: 20px 0 0px 0;
+  height: 2px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ca1c1c;
+}
+
+.coaches_card {
+  display: flex;
+  justify-content: center;
+}
+
+.coaches_box_member {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.coaches_info img {
+  height: auto;
+  width: auto;
+}
+
+.coaches_info h5 {
+  margin: 15px 5px 10px 0;
+}
+.coaches_info h5 a {
+  margin-right: 5px;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  justify-content: safe;
+}
+
+.coaches_info h5 a:hover {
+  color: rgb(248, 152, 43);
+}
+
+.text-danger {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ac2323;
+}
+
+.coaches_box_member p {
+  font-weight: 300;
+  width: 280px;
+  opacity: 0.8;
+}
+
+/*Nutrition page*/
+
+.section_nutrition {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(39, 38, 38);
+  color: white;
+}
+
+.text_nutrition {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.section_nutrition .nutrition_box_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nutrition_boxes {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 40px;
+}
+
+.nutrition_boxes img {
+  width: auto;
+  height: 350px;
+  border-bottom: 1px solid white;
+}
+
+.nutrition_boxes small {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nutrition_boxes p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/*Rating nutrition*/
+.rating_block {
+  width: auto;
+  height: 20px;
+}
+
+.rating_block input[type="radio"] {
+  display: none;
+}
+.label_rating {
+  float: right;
+  display: block;
+  padding-right: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(/img/star.png) no-repeat 50% 0;
+  cursor: pointer;
+}
+
+.rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+.rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+.rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/ {
+  background: url(/img/star_actived.png) no-repeat;
+}
+
+/*Contact section*/
+
+.section_contact {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    150deg,
+    white,
+    white 75%,
+    rgb(39, 38, 38) 50%,
+    rgb(39, 38, 38)
+  );
+  display: flex;
+}
+
+.main_info {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  align-items: center;
+}
+
+.main_info .navbar__logo {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.main_info_block {
+  position: relative;
+  display: flex;
+}
+
+.left_contact_info {
+  position: relative;
+  padding-top: 40px;
+}
+
+.left_contact_info p {
+  padding: 5px 0 5px 0;
+}
+
+.left_contact_info span {
+  margin-top: 4px;
+}
+
+.contact_street_info {
+  padding-bottom: 30px;
+  width: 600px;
+  display: flex;
+}
+
+.street_info {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.contact_info {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_phone_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_schedule_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone_info,
+.schedule_info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.communication_info {
+  position: absolute;
+  top: -45px;
+}
+
+.communication_info h2 {
+  padding-bottom: 45px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.communication_info p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.communication_info form {
+  display: flex;
+}
+.communication_info input {
+  width: 400px;
+  padding: 15px;
+  margin: 20px 10px 0 0;
+  font-weight: 500;
+}
+.communication_info input:focus {
+  outline: none !important;
+}
+
+.footer {
+  height: 400px;
+}
+
+.main_info hr {
+  color: #ca1c1c;
+}
+
+.social_media {
+  position: relative;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.social_media p {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.social_media hr {
+  margin: auto;
+  width: 100px;
+  margin-bottom: 70px;
+  height: 1px;
+  background-color: #ca1c1c;
+}
+.media_icons {
+  height: 80px;
+}
+
+.media_icons img {
+  width: 65px;
+  height: auto;
+  border-radius: 50%;
+  padding: 2%;
+  transition: transform 0.8s ease-in-out;
+}
+.media_icons img:hover {
+  transform: rotate(360deg);
+}
